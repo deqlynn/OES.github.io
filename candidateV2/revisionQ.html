@@ -1,0 +1,1935 @@
+
+<title>OES</title>
+<html>
+
+<head>
+
+<SCRIPT language=javascript> 
+
+var minsAllowed=30;
+
+var msgTimeLeft="Time Left";
+
+var nrtotquestion=20;
+
+var nrtotmark=20;
+
+var c_img_dir = "http://www.icerdik.net/home/include/images/";
+
+</SCRIPT>
+
+
+
+<SCRIPT language=javascript>
+
+function process_time_out(){
+
+  document.score.submit();
+
+}
+
+
+
+function rate_question(v_qno) {
+
+ var URL = "std_rate.php?nrquestion=" + v_qno;
+
+ window.open(URL, '_blank', 'width=295,height=200')
+
+}
+
+function open_feedback(v_qno) {
+
+ var URL = "std_fbk_exercise.php?nrquestion=" + v_qno;
+
+ window.open(URL, '_blank', 'width=295,height=210');
+
+ return;
+
+}
+
+</script>
+
+<title>Revision Exercise</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+<link href="http://www.icerdik.net/home/en/std/include/css/question_styles.css" type="text/css" rel="stylesheet">
+
+<script language="javascript" src="http://www.icerdik.net/home/include/js/global.js"></script>
+
+<script language="javascript" src="http://www.icerdik.net/home/include/js/control.js"></script>
+
+<script language="javascript" src="http://www.icerdik.net/home/include/js/label.js"></script>
+
+<script language="javascript" src="http://www.icerdik.net/home/include/js/commons.js"></script>
+
+<script language="javascript" src="http://www.icerdik.net/home/include/js/revision_asses2.js"></script>
+
+<style type="text/css">.timer { position: fixed; bottom: 50px; right: 50px; font-weight: bold; background: #ffffff; border: 2px dashed #d2d2d2; padding: 10px; }</style>
+
+</head>
+
+
+
+<body onLoad="showTime(); MM_preloadImages('http://www.icerdik.net/home/include/images/b.jpg','http://www.icerdik.net/home/include/images/b_oc.jpg');" >
+
+
+
+<!-- timer -->
+
+<div class="timer">
+  Time Left:<br>
+  <input name="minutes" type="text" style="width: 20px; border: none; background-color:none; font-size: 16px; font-weight: bold;">m <input name="seconds" type="text" style="width: 26px; border: none; background-color:none; font-size: 16px; font-weight: bold;">s
+</div>
+
+<script src="http://www.icerdik.net/home/include/js/timer.js"></script>
+
+<!--timer end -->
+
+
+
+<br>
+
+<table align=center border="0" cellpadding="0" cellspacing="0" width="740">
+
+   <tr>
+
+      <td background="images/question_box_top.jpg" height="55"></td>
+
+   </tr>
+
+   <tr>
+
+      <td align=center background="images/question_box_middle.jpg"><font color=blue><font size=3><b>Lembaga Jururawat Malaysia</b></font><br><br>Diploma Kejururawatan</font></td>
+
+   </tr>
+
+   <tr>
+
+      <td background="images/question_box_bottom.jpg" height="5"></td>
+
+   </tr>
+
+</table>
+
+<br><br>
+
+
+   
+   
+   <!-- header--><br>
+
+   <table align="center" border="0" width="720">
+
+      <tr>
+
+         <td>
+
+         <table border="0" cellpadding="0" cellspacing="0" width="100%">
+
+            <tr>
+
+               <!-- header -->
+
+               <td width="10%" valign="top"></td>
+
+               <td width="85%" valign="top"><p align='left'>Baca petikan di bawah, kemudian jawab soalan-soalan berikutnya.
+<p>
+<img src=http://home.straight-a.com.my/question/70/70534/70534.jpg></p></td>
+
+               <td width="5%" valign="top">&nbsp;</td>
+
+            </tr>
+
+         </table>
+
+         </td>
+
+      </tr>
+
+   </table>
+
+   
+   <!--question --><br>
+
+   <table align="center" border="0" width="720">
+
+      <tr>
+
+         <td>
+
+         <table border="0" cellpadding="0" cellspacing="0" width="100%">
+
+            <tr>
+
+               <td width="10%" valign="top">1.</td>
+
+               <td width="85%" valign="top">Apakah maksud kata-kata Samat, "Eee....ngerinya" dalam petikan di atas?</td>
+
+               <td width="5%" valign="bottom"></td>
+
+            </tr>
+
+         </table>
+
+         <table border="0" cellpadding="0" cellspacing="0" width="100%">
+
+            <tr>
+
+               <td width="85%" valign="top"></td>
+
+               <td width="1%" valign="top"><i><font color=#999999>(</font></i></td>
+
+               <td width="2%" valign="top" align center><i><font color=#0000FF><b>
+
+                 <script language="JavaScript">
+
+                 lblmark1 = new QLabel(null, 'lblmark1',1);
+                </script>
+
+                </b></font></i></td>
+
+               <td width="12%" valign="top"><i><font color=#999999>Markah )</font></i></td>
+
+            </tr>
+
+         </table>
+
+         </td>
+
+      </tr>
+
+   </table>
+
+   <!-- answer -->
+
+   <INPUT TYPE="HIDDEN"  name=ans1 value='C' >
+
+   <INPUT TYPE="HIDDEN"  name=format1 value='10' >
+
+   <INPUT TYPE="HIDDEN"  name=nrmark1 value='1' >
+
+     <table align="center" border="0" width="720">
+
+      <tr>
+
+         <td>
+
+         <table border="0" cellpadding="0" cellspacing="0" width="100%">
+
+            <tr>
+
+               <td width="6%" valign="top"></td>
+
+               <td width="4%" valign="top"><input type="image" name=1a  src='http://www.icerdik.net/home/include/images/a.jpg'  onclick="check_answer_mc(1,'A');"></td>
+
+               <td width="80%" valign="top">Bayang-bayang ular sawa menelan manusia.&nbsp;&nbsp;&nbsp;<img border="0" src="http://www.icerdik.net/home/include/images/blank.gif" name="mark1a" ></td>
+
+               <td width="10%" valign="top">&nbsp;</td>
+
+            </tr>
+
+            <tr>
+
+               <td valign="top" valign="top"></td>
+
+               <td width="4%" valign="top"><input type="image" name=1b  src='http://www.icerdik.net/home/include/images/b.jpg'  onclick="check_answer_mc(1,'B');" ></td>
+
+               <td valign="top">Dia terbayang kenangan ular sawa menelan manusia.&nbsp;&nbsp;&nbsp;<img border="0" src="http://www.icerdik.net/home/include/images/blank.gif" name="mark1b" ></td>
+
+               <td valign="top">&nbsp;</td>
+
+            </tr>
+
+            <tr>
+
+               <td valign="top"></td>
+
+               <td width="4%" valign="top"><input type="image" name=1c  src='http://www.icerdik.net/home/include/images/c.jpg'  onclick="check_answer_mc(1,'C');"></td>
+
+               <td valign="top">Gambar ular sawa menelan manusia yang tersiar dalam akhbar.&nbsp;&nbsp;&nbsp;<img border="0" src="http://www.icerdik.net/home/include/images/blank.gif" name="mark1c" ></td>
+
+               <td>&nbsp;</td>
+
+            </tr>
+
+            <tr>
+
+               <td valign="top"></td>
+
+               <td width="4%" valign="top"><input type="image" name=1d  src='http://www.icerdik.net/home/include/images/d.jpg'  onclick="check_answer_mc(1,'D');"  ></td>
+
+               <td valign="top">Kejadian ular sawa menelan manusia yang dilihat oleh Gopal.&nbsp;&nbsp;&nbsp;<img border="0" src="http://www.icerdik.net/home/include/images/blank.gif" name="mark1d" ></td>
+
+               <td>&nbsp;</td>
+
+            </tr>
+
+            
+
+          <!--e-Notes ------------------------------------------------->            
+
+          
+            
+
+            
+
+         <!--e-Notes End---------------------------------------------->  
+
+         </table>
+
+         </td>
+
+      </tr>
+
+   </table>
+
+
+
+   
+   <!--Reference--><br>
+
+   <table align="center" border="0" cellpadding="0" cellspacing="0" width="720">
+
+      <tr>
+
+        <td width="10%"></td>
+
+        <td width="90%"><font class=remark>Q.No. 70534</font>&nbsp;&nbsp;&nbsp;&nbsp; <a href="javascript:open_feedback(70534);"><font class=remark>Feedback</font> &nbsp;&nbsp;&nbsp;<a href='javascript:rate_question(70534);'><font class=remark>Rate It</font></a></td>
+
+     </tr>
+
+  </table>
+
+ 
+   
+   
+   <!-- header--><br>
+
+   
+
+   
+   <!--question --><br>
+
+   <table align="center" border="0" width="720">
+
+      <tr>
+
+         <td>
+
+         <table border="0" cellpadding="0" cellspacing="0" width="100%">
+
+            <tr>
+
+               <td width="10%" valign="top">2.</td>
+
+               <td width="85%" valign="top">Perkataan "sensasi" dalam petikan di atas sesuai digantikan dengan perkataan ____________.</td>
+
+               <td width="5%" valign="bottom"></td>
+
+            </tr>
+
+         </table>
+
+         <table border="0" cellpadding="0" cellspacing="0" width="100%">
+
+            <tr>
+
+               <td width="85%" valign="top"></td>
+
+               <td width="1%" valign="top"><i><font color=#999999>(</font></i></td>
+
+               <td width="2%" valign="top" align center><i><font color=#0000FF><b>
+
+                 <script language="JavaScript">
+
+                 lblmark2 = new QLabel(null, 'lblmark2',1);
+                </script>
+
+                </b></font></i></td>
+
+               <td width="12%" valign="top"><i><font color=#999999>Markah )</font></i></td>
+
+            </tr>
+
+         </table>
+
+         </td>
+
+      </tr>
+
+   </table>
+
+   <!-- answer -->
+
+   <INPUT TYPE="HIDDEN"  name=ans2 value='B' >
+
+   <INPUT TYPE="HIDDEN"  name=format2 value='10' >
+
+   <INPUT TYPE="HIDDEN"  name=nrmark2 value='1' >
+
+     <table align="center" border="0" width="720">
+
+      <tr>
+
+         <td>
+
+         <table border="0" cellpadding="0" cellspacing="0" width="100%">
+
+            <tr>
+
+               <td width="6%" valign="top"></td>
+
+               <td width="4%" valign="top"><input type="image" name=2a  src='http://www.icerdik.net/home/include/images/a.jpg'  onclick="check_answer_mc(2,'A');"></td>
+
+               <td width="80%" valign="top">menakutkan&nbsp;&nbsp;&nbsp;<img border="0" src="http://www.icerdik.net/home/include/images/blank.gif" name="mark2a" ></td>
+
+               <td width="10%" valign="top">&nbsp;</td>
+
+            </tr>
+
+            <tr>
+
+               <td valign="top" valign="top"></td>
+
+               <td width="4%" valign="top"><input type="image" name=2b  src='http://www.icerdik.net/home/include/images/b.jpg'  onclick="check_answer_mc(2,'B');" ></td>
+
+               <td valign="top">menggemparkan&nbsp;&nbsp;&nbsp;<img border="0" src="http://www.icerdik.net/home/include/images/blank.gif" name="mark2b" ></td>
+
+               <td valign="top">&nbsp;</td>
+
+            </tr>
+
+            <tr>
+
+               <td valign="top"></td>
+
+               <td width="4%" valign="top"><input type="image" name=2c  src='http://www.icerdik.net/home/include/images/c.jpg'  onclick="check_answer_mc(2,'C');"></td>
+
+               <td valign="top">menghairankan&nbsp;&nbsp;&nbsp;<img border="0" src="http://www.icerdik.net/home/include/images/blank.gif" name="mark2c" ></td>
+
+               <td>&nbsp;</td>
+
+            </tr>
+
+            <tr>
+
+               <td valign="top"></td>
+
+               <td width="4%" valign="top"><input type="image" name=2d  src='http://www.icerdik.net/home/include/images/d.jpg'  onclick="check_answer_mc(2,'D');"  ></td>
+
+               <td valign="top">menyeronokkan&nbsp;&nbsp;&nbsp;<img border="0" src="http://www.icerdik.net/home/include/images/blank.gif" name="mark2d" ></td>
+
+               <td>&nbsp;</td>
+
+            </tr>
+
+            
+
+          <!--e-Notes ------------------------------------------------->            
+
+          
+            
+
+            
+
+         <!--e-Notes End---------------------------------------------->  
+
+         </table>
+
+         </td>
+
+      </tr>
+
+   </table>
+
+
+
+   
+   <!--Reference--><br>
+
+   <table align="center" border="0" cellpadding="0" cellspacing="0" width="720">
+
+      <tr>
+
+        <td width="10%"></td>
+
+        <td width="90%"><font class=remark>Q.No. 70535</font>&nbsp;&nbsp;&nbsp;&nbsp; <a href="javascript:open_feedback(70535);"><font class=remark>Feedback</font> &nbsp;&nbsp;&nbsp;<a href='javascript:rate_question(70535);'><font class=remark>Rate It</font></a></td>
+
+     </tr>
+
+  </table>
+
+ 
+   
+   
+   <!-- header--><br>
+
+   
+
+   
+   <!--question --><br>
+
+   <table align="center" border="0" width="720">
+
+      <tr>
+
+         <td>
+
+         <table border="0" cellpadding="0" cellspacing="0" width="100%">
+
+            <tr>
+
+               <td width="10%" valign="top">3.</td>
+
+               <td width="85%" valign="top">Semua berita berikut telah tersiar dalam akhbar kecuali ____________.</td>
+
+               <td width="5%" valign="bottom"></td>
+
+            </tr>
+
+         </table>
+
+         <table border="0" cellpadding="0" cellspacing="0" width="100%">
+
+            <tr>
+
+               <td width="85%" valign="top"></td>
+
+               <td width="1%" valign="top"><i><font color=#999999>(</font></i></td>
+
+               <td width="2%" valign="top" align center><i><font color=#0000FF><b>
+
+                 <script language="JavaScript">
+
+                 lblmark3 = new QLabel(null, 'lblmark3',1);
+                </script>
+
+                </b></font></i></td>
+
+               <td width="12%" valign="top"><i><font color=#999999>Markah )</font></i></td>
+
+            </tr>
+
+         </table>
+
+         </td>
+
+      </tr>
+
+   </table>
+
+   <!-- answer -->
+
+   <INPUT TYPE="HIDDEN"  name=ans3 value='A' >
+
+   <INPUT TYPE="HIDDEN"  name=format3 value='10' >
+
+   <INPUT TYPE="HIDDEN"  name=nrmark3 value='1' >
+
+     <table align="center" border="0" width="720">
+
+      <tr>
+
+         <td>
+
+         <table border="0" cellpadding="0" cellspacing="0" width="100%">
+
+            <tr>
+
+               <td width="6%" valign="top"></td>
+
+               <td width="4%" valign="top"><input type="image" name=3a  src='http://www.icerdik.net/home/include/images/a.jpg'  onclick="check_answer_mc(3,'A');"></td>
+
+               <td width="80%" valign="top">ular sawa menelan gajah&nbsp;&nbsp;&nbsp;<img border="0" src="http://www.icerdik.net/home/include/images/blank.gif" name="mark3a" ></td>
+
+               <td width="10%" valign="top">&nbsp;</td>
+
+            </tr>
+
+            <tr>
+
+               <td valign="top" valign="top"></td>
+
+               <td width="4%" valign="top"><input type="image" name=3b  src='http://www.icerdik.net/home/include/images/b.jpg'  onclick="check_answer_mc(3,'B');" ></td>
+
+               <td valign="top">ular sawa menelan kambing&nbsp;&nbsp;&nbsp;<img border="0" src="http://www.icerdik.net/home/include/images/blank.gif" name="mark3b" ></td>
+
+               <td valign="top">&nbsp;</td>
+
+            </tr>
+
+            <tr>
+
+               <td valign="top"></td>
+
+               <td width="4%" valign="top"><input type="image" name=3c  src='http://www.icerdik.net/home/include/images/c.jpg'  onclick="check_answer_mc(3,'C');"></td>
+
+               <td valign="top">ular sawa menelan ayam&nbsp;&nbsp;&nbsp;<img border="0" src="http://www.icerdik.net/home/include/images/blank.gif" name="mark3c" ></td>
+
+               <td>&nbsp;</td>
+
+            </tr>
+
+            <tr>
+
+               <td valign="top"></td>
+
+               <td width="4%" valign="top"><input type="image" name=3d  src='http://www.icerdik.net/home/include/images/d.jpg'  onclick="check_answer_mc(3,'D');"  ></td>
+
+               <td valign="top">ular sawa menelan manusia&nbsp;&nbsp;&nbsp;<img border="0" src="http://www.icerdik.net/home/include/images/blank.gif" name="mark3d" ></td>
+
+               <td>&nbsp;</td>
+
+            </tr>
+
+            
+
+          <!--e-Notes ------------------------------------------------->            
+
+          
+            
+
+            
+
+         <!--e-Notes End---------------------------------------------->  
+
+         </table>
+
+         </td>
+
+      </tr>
+
+   </table>
+
+
+
+   
+   <!--Reference--><br>
+
+   <table align="center" border="0" cellpadding="0" cellspacing="0" width="720">
+
+      <tr>
+
+        <td width="10%"></td>
+
+        <td width="90%"><font class=remark>Q.No. 70536</font>&nbsp;&nbsp;&nbsp;&nbsp; <a href="javascript:open_feedback(70536);"><font class=remark>Feedback</font> &nbsp;&nbsp;&nbsp;<a href='javascript:rate_question(70536);'><font class=remark>Rate It</font></a></td>
+
+     </tr>
+
+  </table>
+
+ 
+ <!--question --><br>
+
+   <table align="center" border="0" width="720">
+
+      <tr>
+
+         <td>
+
+         <table border="0" cellpadding="0" cellspacing="0" width="100%">
+
+            <tr>
+
+               <td width="10%" valign="top">4.</td>
+
+               <td width="85%" valign="top">Apakah hukuman yang paling berat boleh dikenakan terhadap orang yang bersalah kerana
+mencedera atau membunuh ular sawa?</td>
+
+               <td width="5%" valign="bottom"></td>
+
+            </tr>
+
+         </table>
+
+         <table border="0" cellpadding="0" cellspacing="0" width="100%">
+
+            <tr>
+
+               <td width="85%" valign="top"></td>
+
+               <td width="1%" valign="top"><i><font color=#999999>(</font></i></td>
+
+               <td width="2%" valign="top" align center><i><font color=#0000FF><b>
+
+                 <script language="JavaScript">
+
+                 lblmark4 = new QLabel(null, 'lblmark4',1);
+                </script>
+
+                </b></font></i></td>
+
+               <td width="12%" valign="top"><i><font color=#999999>Markah )</font></i></td>
+
+            </tr>
+
+         </table>
+
+         </td>
+
+      </tr>
+
+   </table>
+
+   <!-- answer -->
+
+   <INPUT TYPE="HIDDEN"  name=ans4 value='C' >
+
+   <INPUT TYPE="HIDDEN"  name=format4 value='10' >
+
+   <INPUT TYPE="HIDDEN"  name=nrmark4 value='1' >
+
+     <table align="center" border="0" width="720">
+
+      <tr>
+
+         <td>
+
+         <table border="0" cellpadding="0" cellspacing="0" width="100%">
+
+            <tr>
+
+               <td width="6%" valign="top"></td>
+
+               <td width="4%" valign="top"><input type="image" name=4a  src='http://www.icerdik.net/home/include/images/a.jpg'  onclick="check_answer_mc(4,'A');"></td>
+
+               <td width="80%" valign="top">Denda sehingga RM3 000&nbsp;&nbsp;&nbsp;<img border="0" src="http://www.icerdik.net/home/include/images/blank.gif" name="mark4a" ></td>
+
+               <td width="10%" valign="top">&nbsp;</td>
+
+            </tr>
+
+            <tr>
+
+               <td valign="top" valign="top"></td>
+
+               <td width="4%" valign="top"><input type="image" name=4b  src='http://www.icerdik.net/home/include/images/b.jpg'  onclick="check_answer_mc(4,'B');" ></td>
+
+               <td valign="top">Dikenakan hukuman penjara&nbsp;&nbsp;&nbsp;<img border="0" src="http://www.icerdik.net/home/include/images/blank.gif" name="mark4b" ></td>
+
+               <td valign="top">&nbsp;</td>
+
+            </tr>
+
+            <tr>
+
+               <td valign="top"></td>
+
+               <td width="4%" valign="top"><input type="image" name=4c  src='http://www.icerdik.net/home/include/images/c.jpg'  onclick="check_answer_mc(4,'C');"></td>
+
+               <td valign="top">Dihukum penjara dan denda RM3 000&nbsp;&nbsp;&nbsp;<img border="0" src="http://www.icerdik.net/home/include/images/blank.gif" name="mark4c" ></td>
+
+               <td>&nbsp;</td>
+
+            </tr>
+
+            <tr>
+
+               <td valign="top"></td>
+
+               <td width="4%" valign="top"><input type="image" name=4d  src='http://www.icerdik.net/home/include/images/d.jpg'  onclick="check_answer_mc(4,'D');"  ></td>
+
+               <td valign="top">Denda RM3 000 atau dihukum penjara&nbsp;&nbsp;&nbsp;<img border="0" src="http://www.icerdik.net/home/include/images/blank.gif" name="mark4d" ></td>
+
+               <td>&nbsp;</td>
+
+            </tr>
+
+            
+
+          <!--e-Notes ------------------------------------------------->            
+
+          
+            
+
+            
+
+         <!--e-Notes End---------------------------------------------->  
+
+         </table>
+
+         </td>
+
+      </tr>
+
+   </table>
+
+
+
+   
+   <!--Reference--><br>
+
+   <table align="center" border="0" cellpadding="0" cellspacing="0" width="720">
+
+      <tr>
+
+        <td width="10%"></td>
+
+        <td width="90%"><font class=remark>Q.No. 70537</font>&nbsp;&nbsp;&nbsp;&nbsp; <a href="javascript:open_feedback(70537);"><font class=remark>Feedback</font> &nbsp;&nbsp;&nbsp;<a href='javascript:rate_question(70537);'><font class=remark>Rate It</font></a></td>
+
+     </tr>
+
+  </table>
+  
+  <!--question --><br>
+
+   <table align="center" border="0" width="720">
+
+      <tr>
+
+         <td>
+
+         <table border="0" cellpadding="0" cellspacing="0" width="100%">
+
+            <tr>
+
+               <td width="10%" valign="top">5.</td>
+
+               <td width="85%" valign="top">Ular sawa tidak boleh dipukul atau dibunuh kerana ____________.</td>
+
+               <td width="5%" valign="bottom"></td>
+
+            </tr>
+
+         </table>
+
+         <table border="0" cellpadding="0" cellspacing="0" width="100%">
+
+            <tr>
+
+               <td width="85%" valign="top"></td>
+
+               <td width="1%" valign="top"><i><font color=#999999>(</font></i></td>
+
+               <td width="2%" valign="top" align center><i><font color=#0000FF><b>
+
+                 <script language="JavaScript">
+
+                 lblmark5 = new QLabel(null, 'lblmark5',1);
+                </script>
+
+                </b></font></i></td>
+
+               <td width="12%" valign="top"><i><font color=#999999>Markah )</font></i></td>
+
+            </tr>
+
+         </table>
+
+         </td>
+
+      </tr>
+
+   </table>
+
+   <!-- answer -->
+
+   <INPUT TYPE="HIDDEN"  name=ans5 value='B' >
+
+   <INPUT TYPE="HIDDEN"  name=format5 value='10' >
+
+   <INPUT TYPE="HIDDEN"  name=nrmark5 value='1' >
+
+     <table align="center" border="0" width="720">
+
+      <tr>
+
+         <td>
+
+         <table border="0" cellpadding="0" cellspacing="0" width="100%">
+
+            <tr>
+
+               <td width="6%" valign="top"></td>
+
+               <td width="4%" valign="top"><input type="image" name=5a  src='http://www.icerdik.net/home/include/images/a.jpg'  onclick="check_answer_mc(5,'A');"></td>
+
+               <td width="80%" valign="top">hukumannya sangat berat&nbsp;&nbsp;&nbsp;<img border="0" src="http://www.icerdik.net/home/include/images/blank.gif" name="mark5a" ></td>
+
+               <td width="10%" valign="top">&nbsp;</td>
+
+            </tr>
+
+            <tr>
+
+               <td valign="top" valign="top"></td>
+
+               <td width="4%" valign="top"><input type="image" name=5b  src='http://www.icerdik.net/home/include/images/b.jpg'  onclick="check_answer_mc(5,'B');" ></td>
+
+               <td valign="top">ia merupakan sejenis binatang yang dilindungi&nbsp;&nbsp;&nbsp;<img border="0" src="http://www.icerdik.net/home/include/images/blank.gif" name="mark5b" ></td>
+
+               <td valign="top">&nbsp;</td>
+
+            </tr>
+
+            <tr>
+
+               <td valign="top"></td>
+
+               <td width="4%" valign="top"><input type="image" name=5c  src='http://www.icerdik.net/home/include/images/c.jpg'  onclick="check_answer_mc(5,'C');"></td>
+
+               <td valign="top">kita hanya boleh lari apabila terjumpa ular sawa&nbsp;&nbsp;&nbsp;<img border="0" src="http://www.icerdik.net/home/include/images/blank.gif" name="mark5c" ></td>
+
+               <td>&nbsp;</td>
+
+            </tr>
+
+            <tr>
+
+               <td valign="top"></td>
+
+               <td width="4%" valign="top"><input type="image" name=5d  src='http://www.icerdik.net/home/include/images/d.jpg'  onclick="check_answer_mc(5,'D');"  ></td>
+
+               <td valign="top">kita boleh dihukum penjara&nbsp;&nbsp;&nbsp;<img border="0" src="http://www.icerdik.net/home/include/images/blank.gif" name="mark5d" ></td>
+
+               <td>&nbsp;</td>
+
+            </tr>
+
+            
+
+          <!--e-Notes ------------------------------------------------->            
+
+          
+            
+
+            
+
+         <!--e-Notes End---------------------------------------------->  
+
+         </table>
+
+         </td>
+
+      </tr>
+
+   </table>
+
+
+
+   
+   <!--Reference--><br>
+
+   <table align="center" border="0" cellpadding="0" cellspacing="0" width="720">
+
+      <tr>
+
+        <td width="10%"></td>
+
+        <td width="90%"><font class=remark>Q.No. 70538</font>&nbsp;&nbsp;&nbsp;&nbsp; <a href="javascript:open_feedback(70538);"><font class=remark>Feedback</font> &nbsp;&nbsp;&nbsp;<a href='javascript:rate_question(70538);'><font class=remark>Rate It</font></a></td>
+
+     </tr>
+
+  </table>
+  
+  <!-- header--><br>
+
+   <table align="center" border="0" width="720">
+
+      <tr>
+
+         <td>
+
+         <table border="0" cellpadding="0" cellspacing="0" width="100%">
+
+            <tr>
+
+               <!-- header -->
+
+               <td width="10%" valign="top"></td>
+
+               <td width="85%" valign="top"><p align='left'>Baca syair dibawah, kemudian jawab soalan-soalan berikutnya.<br></br>
+
+Tersebut kisah satu cerita,
+<br><b>Seorang anak yang telah berjaya,</b>
+<br>Hidupnya senang lagi bahagia,
+<br>Kerana kecilnya gigih berusaha.<Br></br>
+
+Datang sekolah tiadalah jemu,
+<br>Walaupun kurang pensel dan buku,
+<br>Hasratnya gigih menuntut ilmu,
+<br>Kelak membantu ayah dan ibu.<br></br>
+
+Disematnya azam di dalam hati,
+<br>Kepada keluarga mahu berbakti,
+<br>Adik-beradik pun ramai lagi,
+<br>Dia mesti hidup berdikari.<br></br>
+
+Siang dan malam membaca buku,
+<br>Menulis mengira satu persatu,
+<br>Membuang masa tiadalah mahu,
+<br>Agar dadanya dipenuhi ilmu.<br></br>
+
+Penat berusaha bertungkus-lumus,
+<br>Setiap ujian semuanya lulus,
+<br>Bekerja dan belajar hendaklah terus,
+<br>Mohon petunjuk Tuhan yang kudus.<br></br>
+
+Demikian coretan sebuah kisah,
+<Br>Menjadi senang sesudah susah,
+<br>Janganlah kita <b>mudah menyerah</b>,
+<br>Gigih berusaha membawa tuah.</p></td>
+
+               <td width="5%" valign="top">&nbsp;</td>
+
+            </tr>
+
+         </table>
+
+         </td>
+
+      </tr>
+
+   </table>
+
+   
+   <!--question --><br>
+
+   <table align="center" border="0" width="720">
+
+      <tr>
+
+         <td>
+
+         <table border="0" cellpadding="0" cellspacing="0" width="100%">
+
+            <tr>
+
+               <td width="10%" valign="top">6.</td>
+
+               <td width="85%" valign="top">Apakah perkara yang diutamakan dalam syair di atas?</td>
+
+               <td width="5%" valign="bottom"></td>
+
+            </tr>
+
+         </table>
+
+         <table border="0" cellpadding="0" cellspacing="0" width="100%">
+
+            <tr>
+
+               <td width="85%" valign="top"></td>
+
+               <td width="1%" valign="top"><i><font color=#999999>(</font></i></td>
+
+               <td width="2%" valign="top" align center><i><font color=#0000FF><b>
+
+                 <script language="JavaScript">
+
+                 lblmark6 = new QLabel(null, 'lblmark6',1);
+                </script>
+
+                </b></font></i></td>
+
+               <td width="12%" valign="top"><i><font color=#999999>Markah )</font></i></td>
+
+            </tr>
+
+         </table>
+
+         </td>
+
+      </tr>
+
+   </table>
+
+   <!-- answer -->
+
+   <INPUT TYPE="HIDDEN"  name=ans6 value='B' >
+
+   <INPUT TYPE="HIDDEN"  name=format6 value='10' >
+
+   <INPUT TYPE="HIDDEN"  name=nrmark6 value='1' >
+
+     <table align="center" border="0" width="720">
+
+      <tr>
+
+         <td>
+
+         <table border="0" cellpadding="0" cellspacing="0" width="100%">
+
+            <tr>
+
+               <td width="6%" valign="top"></td>
+
+               <td width="4%" valign="top"><input type="image" name=6a  src='http://www.icerdik.net/home/include/images/a.jpg'  onclick="check_answer_mc(6,'A');"></td>
+
+               <td width="80%" valign="top">Kepentingan menghargai masa&nbsp;&nbsp;&nbsp;<img border="0" src="http://www.icerdik.net/home/include/images/blank.gif" name="mark6a" ></td>
+
+               <td width="10%" valign="top">&nbsp;</td>
+
+            </tr>
+
+            <tr>
+
+               <td valign="top" valign="top"></td>
+
+               <td width="4%" valign="top"><input type="image" name=6b  src='http://www.icerdik.net/home/include/images/b.jpg'  onclick="check_answer_mc(6,'B');" ></td>
+
+               <td valign="top">Kesungguhan mencari ilmu&nbsp;&nbsp;&nbsp;<img border="0" src="http://www.icerdik.net/home/include/images/blank.gif" name="mark6b" ></td>
+
+               <td valign="top">&nbsp;</td>
+
+            </tr>
+
+            <tr>
+
+               <td valign="top"></td>
+
+               <td width="4%" valign="top"><input type="image" name=6c  src='http://www.icerdik.net/home/include/images/c.jpg'  onclick="check_answer_mc(6,'C');"></td>
+
+               <td valign="top">Menghormati ibu bapa&nbsp;&nbsp;&nbsp;<img border="0" src="http://www.icerdik.net/home/include/images/blank.gif" name="mark6c" ></td>
+
+               <td>&nbsp;</td>
+
+            </tr>
+
+            <tr>
+
+               <td valign="top"></td>
+
+               <td width="4%" valign="top"><input type="image" name=6d  src='http://www.icerdik.net/home/include/images/d.jpg'  onclick="check_answer_mc(6,'D');"  ></td>
+
+               <td valign="top">Membantu adik-adik&nbsp;&nbsp;&nbsp;<img border="0" src="http://www.icerdik.net/home/include/images/blank.gif" name="mark6d" ></td>
+
+               <td>&nbsp;</td>
+
+            </tr>
+
+            
+
+          <!--e-Notes ------------------------------------------------->            
+
+          
+            
+
+            
+
+         <!--e-Notes End---------------------------------------------->  
+
+         </table>
+
+         </td>
+
+      </tr>
+
+   </table>
+
+
+
+   
+   <!--Reference--><br>
+
+   <table align="center" border="0" cellpadding="0" cellspacing="0" width="720">
+
+      <tr>
+
+        <td width="10%"></td>
+
+        <td width="90%"><font class=remark>Q.No. 5070</font>&nbsp;&nbsp;&nbsp;&nbsp; <a href="javascript:open_feedback(5070);"><font class=remark>Feedback</font> &nbsp;&nbsp;&nbsp;<a href='javascript:rate_question(5070);'><font class=remark>Rate It</font></a></td>
+
+     </tr>
+
+  </table>
+
+<!--question --><br>
+
+   <table align="center" border="0" width="720">
+
+      <tr>
+
+         <td>
+
+         <table border="0" cellpadding="0" cellspacing="0" width="100%">
+
+            <tr>
+
+               <td width="10%" valign="top">7.</td>
+
+               <td width="85%" valign="top">Bagaimanakah keadaan hidup keluarga yang diceritakan dalam syair di atas?</td>
+
+               <td width="5%" valign="bottom"></td>
+
+            </tr>
+
+         </table>
+
+         <table border="0" cellpadding="0" cellspacing="0" width="100%">
+
+            <tr>
+
+               <td width="85%" valign="top"></td>
+
+               <td width="1%" valign="top"><i><font color=#999999>(</font></i></td>
+
+               <td width="2%" valign="top" align center><i><font color=#0000FF><b>
+
+                 <script language="JavaScript">
+
+                 lblmark7 = new QLabel(null, 'lblmark7',1);
+                </script>
+
+                </b></font></i></td>
+
+               <td width="12%" valign="top"><i><font color=#999999>Markah )</font></i></td>
+
+            </tr>
+
+         </table>
+
+         </td>
+
+      </tr>
+
+   </table>
+
+   <!-- answer -->
+
+   <INPUT TYPE="HIDDEN"  name=ans7 value='D' >
+
+   <INPUT TYPE="HIDDEN"  name=format7 value='10' >
+
+   <INPUT TYPE="HIDDEN"  name=nrmark7 value='1' >
+
+     <table align="center" border="0" width="720">
+
+      <tr>
+
+         <td>
+
+         <table border="0" cellpadding="0" cellspacing="0" width="100%">
+
+            <tr>
+
+               <td width="6%" valign="top"></td>
+
+               <td width="4%" valign="top"><input type="image" name=7a  src='http://www.icerdik.net/home/include/images/a.jpg'  onclick="check_answer_mc(7,'A');"></td>
+
+               <td width="80%" valign="top">Berserah kepada nasib&nbsp;&nbsp;&nbsp;<img border="0" src="http://www.icerdik.net/home/include/images/blank.gif" name="mark7a" ></td>
+
+               <td width="10%" valign="top">&nbsp;</td>
+
+            </tr>
+
+            <tr>
+
+               <td valign="top" valign="top"></td>
+
+               <td width="4%" valign="top"><input type="image" name=7b  src='http://www.icerdik.net/home/include/images/b.jpg'  onclick="check_answer_mc(7,'B');" ></td>
+
+               <td valign="top">Amat suka membaca&nbsp;&nbsp;&nbsp;<img border="0" src="http://www.icerdik.net/home/include/images/blank.gif" name="mark7b" ></td>
+
+               <td valign="top">&nbsp;</td>
+
+            </tr>
+
+            <tr>
+
+               <td valign="top"></td>
+
+               <td width="4%" valign="top"><input type="image" name=7c  src='http://www.icerdik.net/home/include/images/c.jpg'  onclick="check_answer_mc(7,'C');"></td>
+
+               <td valign="top">Berpelajaran tinggi&nbsp;&nbsp;&nbsp;<img border="0" src="http://www.icerdik.net/home/include/images/blank.gif" name="mark7c" ></td>
+
+               <td>&nbsp;</td>
+
+            </tr>
+
+            <tr>
+
+               <td valign="top"></td>
+
+               <td width="4%" valign="top"><input type="image" name=7d  src='http://www.icerdik.net/home/include/images/d.jpg'  onclick="check_answer_mc(7,'D');"  ></td>
+
+               <td valign="top">Serba kekurangan&nbsp;&nbsp;&nbsp;<img border="0" src="http://www.icerdik.net/home/include/images/blank.gif" name="mark7d" ></td>
+
+               <td>&nbsp;</td>
+
+            </tr>
+
+            
+
+          <!--e-Notes ------------------------------------------------->            
+
+          
+            
+
+            
+
+         <!--e-Notes End---------------------------------------------->  
+
+         </table>
+
+         </td>
+
+      </tr>
+
+   </table>
+
+
+
+   
+   <!--Reference--><br>
+
+   <table align="center" border="0" cellpadding="0" cellspacing="0" width="720">
+
+      <tr>
+
+        <td width="10%"></td>
+
+        <td width="90%"><font class=remark>Q.No. 5071</font>&nbsp;&nbsp;&nbsp;&nbsp; <a href="javascript:open_feedback(5071);"><font class=remark>Feedback</font> &nbsp;&nbsp;&nbsp;<a href='javascript:rate_question(5071);'><font class=remark>Rate It</font></a></td>
+
+     </tr>
+
+  </table>
+
+<!--question --><br>
+
+   <table align="center" border="0" width="720">
+
+      <tr>
+
+         <td>
+
+         <table border="0" cellpadding="0" cellspacing="0" width="100%">
+
+            <tr>
+
+               <td width="10%" valign="top">8.</td>
+
+               <td width="85%" valign="top">Semua pernyataan berikut benar tentang seorang anak yang telah berjaya dalam syair di atas kecuali ____________.</td>
+
+               <td width="5%" valign="bottom"></td>
+
+            </tr>
+
+         </table>
+
+         <table border="0" cellpadding="0" cellspacing="0" width="100%">
+
+            <tr>
+
+               <td width="85%" valign="top"></td>
+
+               <td width="1%" valign="top"><i><font color=#999999>(</font></i></td>
+
+               <td width="2%" valign="top" align center><i><font color=#0000FF><b>
+
+                 <script language="JavaScript">
+
+                 lblmark8 = new QLabel(null, 'lblmark8',1);
+                </script>
+
+                </b></font></i></td>
+
+               <td width="12%" valign="top"><i><font color=#999999>Markah )</font></i></td>
+
+            </tr>
+
+         </table>
+
+         </td>
+
+      </tr>
+
+   </table>
+
+   <!-- answer -->
+
+   <INPUT TYPE="HIDDEN"  name=ans8 value='A' >
+
+   <INPUT TYPE="HIDDEN"  name=format8 value='10' >
+
+   <INPUT TYPE="HIDDEN"  name=nrmark8 value='1' >
+
+     <table align="center" border="0" width="720">
+
+      <tr>
+
+         <td>
+
+         <table border="0" cellpadding="0" cellspacing="0" width="100%">
+
+            <tr>
+
+               <td width="6%" valign="top"></td>
+
+               <td width="4%" valign="top"><input type="image" name=8a  src='http://www.icerdik.net/home/include/images/a.jpg'  onclick="check_answer_mc(8,'A');"></td>
+
+               <td width="80%" valign="top">megah dengan kejayaannya&nbsp;&nbsp;&nbsp;<img border="0" src="http://www.icerdik.net/home/include/images/blank.gif" name="mark8a" ></td>
+
+               <td width="10%" valign="top">&nbsp;</td>
+
+            </tr>
+
+            <tr>
+
+               <td valign="top" valign="top"></td>
+
+               <td width="4%" valign="top"><input type="image" name=8b  src='http://www.icerdik.net/home/include/images/b.jpg'  onclick="check_answer_mc(8,'B');" ></td>
+
+               <td valign="top">ingin membela nasib keluarga&nbsp;&nbsp;&nbsp;<img border="0" src="http://www.icerdik.net/home/include/images/blank.gif" name="mark8b" ></td>
+
+               <td valign="top">&nbsp;</td>
+
+            </tr>
+
+            <tr>
+
+               <td valign="top"></td>
+
+               <td width="4%" valign="top"><input type="image" name=8c  src='http://www.icerdik.net/home/include/images/c.jpg'  onclick="check_answer_mc(8,'C');"></td>
+
+               <td valign="top">mempunyai adik yang banyak&nbsp;&nbsp;&nbsp;<img border="0" src="http://www.icerdik.net/home/include/images/blank.gif" name="mark8c" ></td>
+
+               <td>&nbsp;</td>
+
+            </tr>
+
+            <tr>
+
+               <td valign="top"></td>
+
+               <td width="4%" valign="top"><input type="image" name=8d  src='http://www.icerdik.net/home/include/images/d.jpg'  onclick="check_answer_mc(8,'D');"  ></td>
+
+               <td valign="top">sentiasa maju dalam pelajaran&nbsp;&nbsp;&nbsp;<img border="0" src="http://www.icerdik.net/home/include/images/blank.gif" name="mark8d" ></td>
+
+               <td>&nbsp;</td>
+
+            </tr>
+
+            
+
+          <!--e-Notes ------------------------------------------------->            
+
+          
+            
+
+            
+
+         <!--e-Notes End---------------------------------------------->  
+
+         </table>
+
+         </td>
+
+      </tr>
+
+   </table>
+
+
+
+   
+   <!--Reference--><br>
+
+   <table align="center" border="0" cellpadding="0" cellspacing="0" width="720">
+
+      <tr>
+
+        <td width="10%"></td>
+
+        <td width="90%"><font class=remark>Q.No. 5072</font>&nbsp;&nbsp;&nbsp;&nbsp; <a href="javascript:open_feedback(5072);"><font class=remark>Feedback</font> &nbsp;&nbsp;&nbsp;<a href='javascript:rate_question(5072);'><font class=remark>Rate It</font></a></td>
+
+     </tr>
+
+  </table>
+
+
+   
+
+   
+   <!--question --><br>
+
+   <table align="center" border="0" width="720">
+
+      <tr>
+
+         <td>
+
+         <table border="0" cellpadding="0" cellspacing="0" width="100%">
+
+            <tr>
+
+               <td width="10%" valign="top">9.</td>
+
+               <td width="85%" valign="top">Maksud mudah menyerah dalam syair di atas ialah ____________.</td>
+
+               <td width="5%" valign="bottom"></td>
+
+            </tr>
+
+         </table>
+
+         <table border="0" cellpadding="0" cellspacing="0" width="100%">
+
+            <tr>
+
+               <td width="85%" valign="top"></td>
+
+               <td width="1%" valign="top"><i><font color=#999999>(</font></i></td>
+
+               <td width="2%" valign="top" align center><i><font color=#0000FF><b>
+
+                 <script language="JavaScript">
+
+                 lblmark9 = new QLabel(null, 'lblmark9',1);
+                </script>
+
+                </b></font></i></td>
+
+               <td width="12%" valign="top"><i><font color=#999999>Markah )</font></i></td>
+
+            </tr>
+
+         </table>
+
+         </td>
+
+      </tr>
+
+   </table>
+
+   <!-- answer -->
+
+   <INPUT TYPE="HIDDEN"  name=ans9 value='C' >
+
+   <INPUT TYPE="HIDDEN"  name=format9 value='10' >
+
+   <INPUT TYPE="HIDDEN"  name=nrmark9 value='1' >
+
+     <table align="center" border="0" width="720">
+
+      <tr>
+
+         <td>
+
+         <table border="0" cellpadding="0" cellspacing="0" width="100%">
+
+            <tr>
+
+               <td width="6%" valign="top"></td>
+
+               <td width="4%" valign="top"><input type="image" name=9a  src='http://www.icerdik.net/home/include/images/a.jpg'  onclick="check_answer_mc(9,'A');"></td>
+
+               <td width="80%" valign="top">terlalu bermurah hati&nbsp;&nbsp;&nbsp;<img border="0" src="http://www.icerdik.net/home/include/images/blank.gif" name="mark9a" ></td>
+
+               <td width="10%" valign="top">&nbsp;</td>
+
+            </tr>
+
+            <tr>
+
+               <td valign="top" valign="top"></td>
+
+               <td width="4%" valign="top"><input type="image" name=9b  src='http://www.icerdik.net/home/include/images/b.jpg'  onclick="check_answer_mc(9,'B');" ></td>
+
+               <td valign="top">selalu merendah diri&nbsp;&nbsp;&nbsp;<img border="0" src="http://www.icerdik.net/home/include/images/blank.gif" name="mark9b" ></td>
+
+               <td valign="top">&nbsp;</td>
+
+            </tr>
+
+            <tr>
+
+               <td valign="top"></td>
+
+               <td width="4%" valign="top"><input type="image" name=9c  src='http://www.icerdik.net/home/include/images/c.jpg'  onclick="check_answer_mc(9,'C');"></td>
+
+               <td valign="top">terlalu cepat beralah&nbsp;&nbsp;&nbsp;<img border="0" src="http://www.icerdik.net/home/include/images/blank.gif" name="mark9c" ></td>
+
+               <td>&nbsp;</td>
+
+            </tr>
+
+            <tr>
+
+               <td valign="top"></td>
+
+               <td width="4%" valign="top"><input type="image" name=9d  src='http://www.icerdik.net/home/include/images/d.jpg'  onclick="check_answer_mc(9,'D');"  ></td>
+
+               <td valign="top">selalu membantah&nbsp;&nbsp;&nbsp;<img border="0" src="http://www.icerdik.net/home/include/images/blank.gif" name="mark9d" ></td>
+
+               <td>&nbsp;</td>
+
+            </tr>
+
+            
+
+          <!--e-Notes ------------------------------------------------->            
+
+          
+            
+
+            
+
+         <!--e-Notes End---------------------------------------------->  
+
+         </table>
+
+         </td>
+
+      </tr>
+
+   </table>
+
+
+
+   
+   <!--Reference--><br>
+
+   <table align="center" border="0" cellpadding="0" cellspacing="0" width="720">
+
+      <tr>
+
+        <td width="10%"></td>
+
+        <td width="90%"><font class=remark>Q.No. 5073</font>&nbsp;&nbsp;&nbsp;&nbsp; <a href="javascript:open_feedback(5073);"><font class=remark>Feedback</font> &nbsp;&nbsp;&nbsp;<a href='javascript:rate_question(5073);'><font class=remark>Rate It</font></a></td>
+
+     </tr>
+
+  </table>
+
+ 
+   
+   
+ 
+   
+
+   
+   <!--question --><br>
+
+   <table align="center" border="0" width="720">
+
+      <tr>
+
+         <td>
+
+         <table border="0" cellpadding="0" cellspacing="0" width="100%">
+
+            <tr>
+
+               <td width="10%" valign="top">10.</td>
+
+               <td width="85%" valign="top">Maksud rangkap kelima dalam syair di atas ialah ____________.</td>
+
+               <td width="5%" valign="bottom"></td>
+
+            </tr>
+
+         </table>
+
+         <table border="0" cellpadding="0" cellspacing="0" width="100%">
+
+            <tr>
+
+               <td width="85%" valign="top"></td>
+
+               <td width="1%" valign="top"><i><font color=#999999>(</font></i></td>
+
+               <td width="2%" valign="top" align center><i><font color=#0000FF><b>
+
+                 <script language="JavaScript">
+
+                 lblmark10 = new QLabel(null, 'lblmark10',1);
+                </script>
+
+                </b></font></i></td>
+
+               <td width="12%" valign="top"><i><font color=#999999>Markah )</font></i></td>
+
+            </tr>
+
+         </table>
+
+         </td>
+
+      </tr>
+
+   </table>
+
+   <!-- answer -->
+
+   <INPUT TYPE="HIDDEN"  name=ans10 value='B' >
+
+   <INPUT TYPE="HIDDEN"  name=format10 value='10' >
+
+   <INPUT TYPE="HIDDEN"  name=nrmark10 value='1' >
+
+     <table align="center" border="0" width="720">
+
+      <tr>
+
+         <td>
+
+         <table border="0" cellpadding="0" cellspacing="0" width="100%">
+
+            <tr>
+
+               <td width="6%" valign="top"></td>
+
+               <td width="4%" valign="top"><input type="image" name=10a  src='http://www.icerdik.net/home/include/images/a.jpg'  onclick="check_answer_mc(10,'A');"></td>
+
+               <td width="80%" valign="top">berusaha bersungguh-sungguh untuk mencapai kejayaan&nbsp;&nbsp;&nbsp;<img border="0" src="http://www.icerdik.net/home/include/images/blank.gif" name="mark10a" ></td>
+
+               <td width="10%" valign="top">&nbsp;</td>
+
+            </tr>
+
+            <tr>
+
+               <td valign="top" valign="top"></td>
+
+               <td width="4%" valign="top"><input type="image" name=10b  src='http://www.icerdik.net/home/include/images/b.jpg'  onclick="check_answer_mc(10,'B');" ></td>
+
+               <td valign="top">berusaha dahulu kemudian baru berserah kepada takdir&nbsp;&nbsp;&nbsp;<img border="0" src="http://www.icerdik.net/home/include/images/blank.gif" name="mark10b" ></td>
+
+               <td valign="top">&nbsp;</td>
+
+            </tr>
+
+            <tr>
+
+               <td valign="top"></td>
+
+               <td width="4%" valign="top"><input type="image" name=10c  src='http://www.icerdik.net/home/include/images/c.jpg'  onclick="check_answer_mc(10,'C');"></td>
+
+               <td valign="top">belajar dahulu baru mendapat pekerjaan yang baik&nbsp;&nbsp;&nbsp;<img border="0" src="http://www.icerdik.net/home/include/images/blank.gif" name="mark10c" ></td>
+
+               <td>&nbsp;</td>
+
+            </tr>
+
+            <tr>
+
+               <td valign="top"></td>
+
+               <td width="4%" valign="top"><input type="image" name=10d  src='http://www.icerdik.net/home/include/images/d.jpg'  onclick="check_answer_mc(10,'D');"  ></td>
+
+               <td valign="top">berserah bulat-bulat kepada takdir untuk berjaya&nbsp;&nbsp;&nbsp;<img border="0" src="http://www.icerdik.net/home/include/images/blank.gif" name="mark10d" ></td>
+
+               <td>&nbsp;</td>
+
+            </tr>
+
+            
+
+          <!--e-Notes ------------------------------------------------->            
+
+          
+            
+
+            
+
+         <!--e-Notes End---------------------------------------------->  
+
+         </table>
+
+         </td>
+
+      </tr>
+
+   </table>
+
+
+
+   
+   <!--Reference--><br>
+
+   <table align="center" border="0" cellpadding="0" cellspacing="0" width="720">
+
+      <tr>
+
+        <td width="10%"></td>
+
+        <td width="90%"><font class=remark>Q.No. 5074</font>&nbsp;&nbsp;&nbsp;&nbsp; <a href="javascript:open_feedback(5074);"><font class=remark>Feedback</font> &nbsp;&nbsp;&nbsp;<a href='javascript:rate_question(5074);'><font class=remark>Rate It</font></a></td>
+
+     </tr>
+
+  </table>
+
+ 
+   
+   
+   
+
+ 
+   
+   
+   
+ 
+
+ 
+<SCRIPT language=javascript>
+
+  nrtotmark=20;
+
+</SCRIPT>
+
+  <br>
+
+  <table align="center" border="0" cellpadding="0" cellspacing="0" width="720">
+
+      <tr>
+
+        <td align=center>
+
+        <hr noshade color="#C0C0C0" size="1" width="100%">
+
+       <table border="1" cellpadding="0" cellspacing="0" width="25%" fpstyle="13,011111100" style="border: .75pt solid navy">
+
+         <tr>
+
+             <td colspan="2" align=center style="font-weight: bold; color: blue; border-style: none; background-color: red">
+
+              Total Score
+             &nbsp;</td>
+
+         </tr>
+
+         <tr>
+
+             <td align=center style="font-weight: normal; color: black">
+
+               <script language="JavaScript">
+
+                 lblscorepc = new QLabel(null, 'lblscorepc','0%');
+                </script>
+
+             &nbsp;</td>
+
+             <td align=center style="font-weight: normal; color: black">
+
+              <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+
+              <tr>
+
+              <td width="50%" align=right>
+
+               <script language="JavaScript">
+
+                 lblscoremark = new QLabel(null, 'lblscoremark','0');
+                </script>
+
+              </td>
+
+              <td width="50%">&nbsp;/ 10</td>
+
+              </tr>
+
+             </table>
+
+             </td>
+
+         </tr>
+
+       </table>
+
+       <hr noshade color="#C0C0C0" size="1" width="100%">
+
+       <br>
+
+       <form method='post' action="revisionhall.html"  name=score onsubmit="return populate_score();">
+
+
+
+       <INPUT TYPE="HIDDEN"  name=txallquestion_h  value='95a64cd7955465ebeede3f004862c0b7'  >
+
+       <INPUT TYPE="HIDDEN"  name=txallquestion_enc  value='NzA1MzRANzA1MzVANzA1MzZANzA1MzdANzA1MzhANTA3MEA1MDcxQDUwNzJANTA3M0A1MDc0QDUwNzVANTA3NkA1MDc3QDUwNzhANTA3OUA3MDUzOUA3MDU0MEA3MDU0MUA3MDU0MkA3MDU0Mw=='  >
+
+       <INPUT TYPE="HIDDEN"  name=nrmodel_enc  value='MTAwOQ=='  >
+
+       <INPUT TYPE="HIDDEN"  name=nrmodel_h  value='31b3b31a1c2f8a370206f111127c0dbd'  >
+
+       <INPUT TYPE="HIDDEN"  name=nrset_enc  value='MTI0OQ=='  >
+
+       <INPUT TYPE="HIDDEN"  name=nrset_h  value='2ba8698b79439589fdd2b0f7218d8b07'  >
+
+
+
+       <INPUT TYPE="HIDDEN"  name=nrtotmark  value='20'  >
+
+       <INPUT TYPE="HIDDEN"  name=tyexercise  value='1'  >
+
+       <INPUT TYPE="HIDDEN"  name=cdsubject  value='1'  >
+
+       <INPUT TYPE="HIDDEN"  name=cdlevel  value='6'  >
+
+       <INPUT TYPE="HIDDEN"  name=nryear  value=''  >
+
+       <INPUT TYPE="HIDDEN"  name=nrtopic_enc  value='' >
+
+
+
+       <INPUT TYPE="HIDDEN"  name=tymodel  value='1' >
+
+       <INPUT TYPE="HIDDEN"  name=tmalloc  value='30' >
+
+
+
+       <INPUT TYPE="HIDDEN"  name=txnrstart  value='1@2@3@4@5@6@7@8@9@10@11@12@13@14@15@16@17@18@19@20' >
+
+       <INPUT TYPE="HIDDEN"  name=nrresult_rel  value='0' >
+
+
+
+       <INPUT TYPE="HIDDEN"  name=tydifficulty_enc  value='' >
+
+       <INPUT TYPE="HIDDEN"  name=cddifficulty_enc  value='' >
+
+       <INPUT TYPE="HIDDEN"  name=cdlangu_enc  value='MQ==' >
+
+       <INPUT TYPE="HIDDEN"  name=txnrmark>
+
+       <INPUT TYPE="HIDDEN"  name=txnrtry >
+
+       <INPUT TYPE="HIDDEN"  name=txnmtry >
+
+       <INPUT TYPE="HIDDEN"  name=txanswer>
+
+       <INPUT TYPE="HIDDEN"  name=txformat>
+
+
+
+       <INPUT TYPE="HIDDEN"  name=txnrscore>
+
+       <INPUT TYPE="HIDDEN"  name=nrtotscore>
+
+       <INPUT TYPE="HIDDEN"  name=nrtotscorepc>
+
+
+
+       <INPUT TYPE="HIDDEN"  name=tmtime>
+
+       <INPUT TYPE="HIDDEN"  name=tmstart>
+
+       <INPUT TYPE="HIDDEN"  name=tmend>
+
+       <input type="submit"  value="Save Score" name="btnsave" class="button_v2">
+
+       <!--
+
+       <input type="image" name="btnsave" src="images/btn_savev2.jpg" onMouseOut="MM_swapImgRestore();" onMouseOver="MM_swapImage('btnsave','','images/btn_savev2_mo.jpg',1);");"  >
+
+       -->
+
+       </form>
+
+       </td>
+
+     </tr>
+
+  </table>
+
+ <br><br><br>
+
+
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,50 @@
+.round-button {
+    display:block;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    border: 1px solid #131212;
+    border-radius: 100%;
+    color:#f5f5f5;
+    text-align:center;
+    text-decoration:none;
+    background: #f5f5f5;
+    box-shadow: 0 0 3px gray;
+    font-size:10px;
+    font-weight:bold;
+    color: black;
+}
+.btn-indicator {
+    display:block;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    border: 1px solid #131212;
+    border-radius: 100%;
+    color:#f5f5f5;
+    text-align:center;
+    text-decoration:none;
+    background: #f5f5f5;
+    box-shadow: 0 0 3px gray;
+    font-size:10px;
+    font-weight:bold;
+    color: black;
+}
+.round-button:hover {
+    background: #7b87f3;
+}
+
+.testtable{
+    margin: auto;
+    width: 70% !important; 
+    height: 80% !important; 
+
+}
+
+.indicator {
+    width: 500px;
+    height: 100px;
+    border: 1px solid blue;
+    box-sizing: border-box;
+  }
+  

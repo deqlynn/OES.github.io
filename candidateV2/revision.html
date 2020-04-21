@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="refresh" content="value in a second">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="custom/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <title>OES</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-light toolbarColor justify-content-center">
+    <div class="container justify-content-end">
+      <div>
+        <span style="font-size: 25px; color: black; cursor: pointer; padding-right: 20px;" data-toggle="tooltip"
+          href="profile/index.html" data-placement="top" title="Profile">
+          <i class="far fa-id-badge"></i>
+        </span>
+      </div>
+      <div>
+        <span style="font-size: 25px; color: black; cursor: pointer;" data-toggle="tooltip" data-placement="top"
+          title="Keluar">
+          <i class="fas fa-sign-out-alt"></i>
+        </span>
+      </div>
+    </div>
+  </nav>
+  <!--toolbar-->
+  <div class="container-fluid bg-transparent border-bottom">
+    <div class="container mt-2">
+      <nav class="navbar navbar-expand-lg navbar-light bg-transparent box">
+        <img href="#" src="img/oes.png" width="100px" height="50px">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto ">
+            <li class="nav-item active ">
+              <a class="nav-link uk-a" href="index3.html">UTAMA<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link  uk-a " href="revision.html">UlangKaji</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link  uk-a" href="#">Prestasi</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link  uk-a" href="profile/index.html">Profile</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          </form>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <!--jumbotron-->
+  <div class="container mt-4 border-right border-left">
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4 text-center">UlangKaji</h1>
+        <p class="lead text-center">Sila pilih programe, kertas soalan dan tahun.</p>
+      </div>
+    </div>
+  </div>
+  <div class="container border-right border-left">
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <div class="container">
+          <div class="row">
+            <div class="col ">
+              <label> Programe: <input list="programe" name="myPrograme" /></label>
+              <datalist id="programe">
+                <option value="Kejururawatan">
+                <option value="Pembantu Perubatan">
+                <option value="Teknologi Makmal Perubatan">
+                <option value="Teknologi Pergigian">
+                <option value="Farmasi">
+                <option value="Kesihatan Persekitaran">
+                <option value="Jururawat Pergigian">
+                <option value="Jurupulih Perubatan">
+                <option value="Jurupulih Perubatan Anggota (Fisioterapi)">
+                <option value="Juru X-Ray (Radiografi / Radioterapi)">
+              </datalist>
+            </div>
+            <div class="col">
+              <label> Kertas Soalan: <input list="soalan" name="mySoalan" /></label>
+              <datalist id="soalan">
+                <option value="Kejururawatan">
+                <option value="Pembantu Perubatan">
+                <option value="Teknologi Makmal Perubatan">
+                <option value="Teknologi Pergigian">
+                <option value="Farmasi">
+                <option value="Kesihatan Persekitaran">
+                <option value="Jururawat Pergigian">
+                <option value="Jurupulih Perubatan">
+                <option value="Jurupulih Perubatan Anggota (Fisioterapi)">
+                <option value="Juru X-Ray (Radiografi / Radioterapi)">
+              </datalist>
+            </div>
+            <div class="col">
+              <label>Tahun peperiksaan: <input list="tahun" name="myTahun" /></label>
+              <datalist id="tahun">
+                <option value="2019">
+                <option value="2018">
+                <option value="2017">
+                <option value="2016">
+                <option value="2015">
+                <option value="2014">
+                <option value="2013">
+                <option value="2012">
+              </datalist>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container text-center mt-4">
+        <a href="revisionQ.html" button type="button" class="btn btn-outline-success">Hantar</button></a>
+      </div>
+    </div>
+  </div>
+  <!--jumbotron-->
+  <!--footer-->
+  <div class="card-footer text-muted text-center fixed-bottom">
+    <div class="footer-link">All rights reserved. </div>
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src=" https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

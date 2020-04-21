@@ -1,0 +1,46 @@
+.btn-circle.btn-xl {
+    width: 70px;
+    height: 70px;
+    padding: 10px 16px;
+    border-radius: 35px;
+    font-size: 13px;
+    line-height: 1.33;
+    background-color: rgb(245, 16, 16);
+    margin: 13px 12px 12px 10px;
+      
+    
+}
+.btn-circle.btn-x2 {
+    width: 70px;
+    height: 70px;
+    padding: 10px 16px;
+    border-radius: 35px;
+    font-size: 13px;
+    line-height: 1.33;
+    background-color: rgb(10, 248, 82);
+    margin: 13px 12px 12px 10px;
+      
+    
+}
+.btn-circle.btn-x3 {
+    width: 70px;
+    height: 70px;
+    padding: 10px 16px;
+    border-radius: 35px;
+    font-size: 13px;
+    line-height: 1.33;
+    background-color: rgb(236, 214, 15);
+    margin: 13px 12px 12px 10px;
+      
+    
+}
+
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    padding: 6px 0px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.42857;
+}

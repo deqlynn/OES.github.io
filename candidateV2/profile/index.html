@@ -1,0 +1,180 @@
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="refresh" content="value in a second">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="custom/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <title>OES</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-light toolbarColor justify-content-center">
+    <div class="container justify-content-end">
+      <div>
+        <span style="font-size: 25px; color: black; cursor: pointer; padding-right: 20px;" data-toggle="tooltip"
+          data-placement="top" title="Profile">
+          <i class="far fa-id-badge"></i>
+        </span>
+      </div>
+      <div>
+        <span style="font-size: 25px; color: black; cursor: pointer;" data-toggle="tooltip" data-placement="top"
+          title="Keluar">
+          <i class="fas fa-sign-out-alt"></i>
+        </span>
+      </div>
+    </div>
+  </nav>
+  <!--toolbar-->
+  <div class="container-fluid bg-transparent border-bottom">
+    <div class="container mt-2">
+      <nav class="navbar navbar-expand-lg navbar-light bg-transparent box">
+        <img href="#" src="img/oes.png" width="100px" height="50px">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto ">
+            <li class="nav-item active ">
+              <a class="nav-link uk-a " href="../index3.html">UTAMA<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link  uk-a " href="../revision.html">UlangKaji</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link  uk-a" href="#">Prestasi</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link  uk-a" href="index.html">Profile</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          </form>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <!--profile section-->
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-6 col-md-4">​
+        <source srcset="..." type="image/svg+xml">
+        <img src="img/nurse.jpg" class="img-fluid img-thumbnail" alt="...">
+      </div>
+      <div class="col-md-8">
+        <!-- form user info -->
+        <div class="card card-outline-secondary">
+          <div class="card-header">
+            <h3 class="mb-0">Profile</h3>
+          </div>
+          <div class="card-body">
+            <form class="form" role="form" autocomplete="off">
+              <div class="form-group row">
+                <label class="col-lg-3 col-form-label form-control-label">First name</label>
+                <div class="col-lg-9">
+                  <input class="form-control" type="text" value="Siti Sarah">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-lg-3 col-form-label form-control-label">Last name</label>
+                <div class="col-lg-9">
+                  <input class="form-control" type="text" value="Shamsudin">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-lg-3 col-form-label form-control-label">Email</label>
+                <div class="col-lg-9">
+                  <input class="form-control" type="email" value="sarah@gmail.com">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-lg-3 col-form-label form-control-label">Username</label>
+                <div class="col-lg-9">
+                  <input class="form-control" type="text" value="sarah91">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-lg-3 col-form-label form-control-label">Password</label>
+                <div class="col-lg-9">
+                  <input class="form-control" type="password" value="11111122333">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-lg-3 col-form-label form-control-label">Confirm</label>
+                <div class="col-lg-9">
+                  <input class="form-control" type="password" value="11111122333">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-lg-3 col-form-label form-control-label"></label>
+                <div class="col-lg-9">
+                  <input type="reset" class="btn btn-secondary" value="Edit">
+                  <input type="button" class="btn btn-primary  trigger-btn" value="Change Password" data-toggle="modal"
+                    href="#myModal">
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- /form user info -->
+        <!-- change password-->
+        <div id="myModal" class="modal fade">
+          <div class="modal-dialog modal-login">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Change Password</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              </div>
+              <div class="modal-body">
+                <form class="form" role="form" autocomplete="off">
+                  <div class="form-group">
+                    <label for="inputPasswordOld">Current Password</label>
+                    <input type="password" class="form-control" id="inputPasswordOld" required="">
+                  </div>
+                  <div class="form-group">
+                    <label for="inputPasswordNew">New Password</label>
+                    <input type="password" class="form-control" id="inputPasswordNew" required="">
+                    <span class="form-text small text-muted"> The password must be 8-20 characters, and must
+                      <em>not</em> contain spaces. </span>
+                  </div>
+                  <div class="form-group">
+                    <label for="inputPasswordNewVerify">Verify</label>
+                    <input type="password" class="form-control" id="inputPasswordNewVerify" required="">
+                    <span class="form-text small text-muted"> To confirm, type the new password again. </span>
+                  </div>
+                  <div class="form-group">
+                    <button type="submit" class="btn btn-success btn-lg float-right">Save</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--profile section-->
+    <!--footer-->
+    <div class="card-footer text-muted text-center fixed-bottom">
+      <div class="footer-link">All rights reserved. </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src=" https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+      </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>

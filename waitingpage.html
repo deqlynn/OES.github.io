@@ -1,0 +1,95 @@
+<!--
+Theme by: WebThemez.com 
+Note: Please use our back link in your site (webthemez.com)
+-->
+<!DOCTYPE HTML>
+<!--[if lt IE 7 ]> <html lang="en" class="ie ie6"> <![endif]--> 
+<!--[if IE 7 ]>	<html lang="en" class="ie ie7"> <![endif]--> 
+<!--[if IE 8 ]>	<html lang="en" class="ie ie8"> <![endif]--> 
+<!--[if IE 9 ]>	<html lang="en" class="ie ie9"> <![endif]--> 
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>OES</title>
+<meta name="description" content="">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow:regular,bold"> 
+<link rel="stylesheet" type="text/css" href="wait/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="wait/css/styles.css">
+	<link rel="icon" href="img/oes.png" type="image/x-icon" />
+</head>
+
+<body id="home">
+<section class="main">
+<div id="Content" class="wrapper topSection">
+	<div id="Header">
+	
+		
+	</div>
+				
+	<h4 align="center"> 
+		<a href="../question/QE1.php">
+		<img src="wait/images/logo_2.png" height="85px" >
+		</a><br><br><b><font color="black">LEMBAGA JURURAWAT  <br> KEMENTERIAN KESIHATAN MALAYSIA</font></b><br>
+	</h4> 
+	
+	<h4 align="center">
+		</a><br><br><b><font color="red">Menunggu Persediaan Peperiksaaan</font></b><br>
+	</h4> 	
+
+	
+	<div class="timer" onload="timer(1800)">
+  
+  <div class="time">
+    <strong><span id="time">Loading...</span></strong>
+  </div>
+</div>
+			
+		<br>	<br>
+	
+	
+		<h5 align="center"> <b><font color="black">PEPERIKSAAN LEMBAGA JURURAWAT MALAYSIA<br> SYARAT BAGI KEMASUKAN DALAM <br>BAHAGIAN AM DAFTAR</font></b><br><br>
+		</h5> 
+		
+	<h6 align="center"> <b><font color="black">TARIKH: 3 JUN 2020 (RABU)</font></b><br><br>
+	</h6>
+		
+	<h6 align="center"> <b><font color="black">MASA: 2 ½  JAM (8.30 PAGI – 11.00 PAGI)</font></b>
+	</h6><
+	
+
+</div>
+</section
+
+<!--Scripts-->
+
+
+<script type="text/javascript">
+var time = 1 * 10;     //30 * 60
+setInterval(function() {
+	
+  var seconds = time % 60;
+  var minutes = (time - seconds) / 60;
+  if (seconds.toString().length == 1) {
+    seconds = "0" + seconds;
+  }
+  if (minutes.toString().length == 1) {
+    minutes = "0" + minutes;
+  }
+  document.getElementById("time").innerHTML ="00 Jam  : "  + minutes + " Minit  : " + "" +""+ seconds +""+ " Saat";
+  time--;
+  if (time == 0) {
+    window.location.href = "../OES/question/QE1.php";
+  }
+}, 1000);
+</script>
+ 
+
+
+
+<script type="text/javascript" src="wait/js/jquery-1.9.1.min.js"></script> 
+<script type="text/javascript" src="wait/js/jquery.countdown.js"></script>
+<script type="text/javascript" src="wait/js/global.js"></script>
+
+</body>
+</html>

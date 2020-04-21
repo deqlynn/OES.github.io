@@ -1,0 +1,40 @@
+.toolbarColor{
+background-color: #EBEDF5;
+}
+
+.navbarContainer{
+	height:69px ;
+	width: 1903px;
+	border-bottom: 1px solid #D1DBE6;
+	display: block;
+}
+.box{
+	height: 69px;
+	
+}
+.uk-a{
+	font-family: 'Barlow Semi Condensed', sans-serif;;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 23.25px;
+	text-align: left;
+	text-transform: uppercase;
+	word-spacing: 20px;
+	
+}
+
+.uk-a:hover{
+background-color: gold;
+
+}
+
+.iconColor{
+	background-color: #527AAF;
+}
+
+.footer {
+	position:absolute; 
+  bottom:0; 
+  width:100%; 
+  height:100px; 
+}

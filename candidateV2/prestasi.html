@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="refresh" content="value in a second">
   <!-- Bootstrap CSS -->
+  <link type="text/css" rel="stylesheet" href="css/linechart.css" />
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="custom/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&display=swap" rel="stylesheet">
@@ -43,16 +44,16 @@
         <div class="collapse navbar-collapse " id="navbarSupportedContent">
           <ul class="navbar-nav mx-auto ">
             <li class="nav-item active ">
-              <a class="nav-link uk-a " href="../index3.html">UTAMA<span class="sr-only">(current)</span></a>
+              <a class="nav-link uk-a " href="index3.html">UTAMA<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item ">
-              <a class="nav-link  uk-a " href="../revision.html">UlangKaji</a>
+              <a class="nav-link  uk-a " href="revision.html">UlangKaji</a>
             </li>
             <li class="nav-item ">
-              <a class="nav-link  uk-a" href="#">Prestasi</a>
+              <a class="nav-link  uk-a" href="prestasi.html">Prestasi</a>
             </li>
             <li class="nav-item ">
-              <a class="nav-link  uk-a" href="index.html">Profile</a>
+              <a class="nav-link  uk-a" href="../candidateV2/profile/index.html">Profile</a>
             </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
@@ -63,7 +64,7 @@
     </div>
   </div>
   <!--prestasi-->
-  <div class="container mt-2">
+  <div class="container mt-2 ">
     <nav aria-label="breadcrumb text-center">
       <ol class="breadcrumb">
         <li class="breadcrumb-item active" aria-current="page">Table</li>
@@ -87,14 +88,14 @@
           <th scope="row">10/5/1019</th>
           <td>Teknologi Makmal Perubatan</td>
           <td>1</td>
-          <td>30m</td>
-          <td>50%</td>
+          <td>1jam</td>
+          <td>30%</td>
         </tr>
         <tr>
           <th scope="row">15/5/2019</th>
           <td>Teknologi Makmal Perubatan</td>
           <td>1</td>
-          <td>40m</td>
+          <td>1jam</td>
           <td>70%</td>
         </tr>
         <tr>
@@ -102,39 +103,48 @@
           <td>Teknologi Makmal Perubatan</td>
           <td>1</td>
           <td>1jam</td>
-          <td>90%</td>
+          <td>60%</td>
         </tr>
         <tr>
           <th scope="row">25/5/2019</th>
           <td>Teknologi Makmal Perubatan</td>
           <td>1</td>
-          <td>20m</td>
-          <td>20%</td>
+          <td>1jam</td>
+          <td>75%</td>
         </tr>
         <tr>
           <th scope="row">30/5/2019</th>
           <td>Teknologi Makmal Perubatan</td>
           <td>1</td>
-          <td>35m</td>
-          <td>30%</td>
+          <td>1jam</td>
+          <td>65%</td>
         </tr>
       </tbody>
     </table>
   </div>
   <!--linecharts-->
-  <div class="container mt-2">
+  <div class="container mt-2 ">
     <nav aria-label="breadcrumb text-center">
       <ol class="breadcrumb">
         <li class="breadcrumb-item active" aria-current="page">LineCharts</li>
         <li class="breadcrumb-item"><a href="#">Table</a></li>
       </ol>
     </nav>
+    <div class="card">
+      <div class="chart-container">
+        <canvas id="line-chartcanvas"></canvas>
+      </div>
+    </div>
   </div>
-  <!--footer
+  <!--footer-->
   <div class="card-footer text-muted text-center fixed-bottom">
     <div class="footer-link">All rights reserved. </div>
-  </div>-->
+  </div>
   <!-- Optional JavaScript -->
+  <!-- javascript linechart -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/Chart.min.js"></script>
+  <script src="js/line.js"></script>
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src=" https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
